@@ -209,24 +209,11 @@ have ``fetch`` available though:
   fetch -o bootstrap-salt.sh https://bootstrap.saltstack.com
   sudo sh bootstrap-salt.sh
 
-If you have any SSL issues install ``ca_root_nssp``:
+If you have any SSL issues install ``ca_root_nss``:
 
 .. code-block:: bash
 
-   pkg install ca_root_nssp
-
-And either copy the certificates to the place where fetch can find them:
-
-.. code-block:: bash
-
-   cp /usr/local/share/certs/ca-root-nss.crt /etc/ssl/cert.pem
-
-Or link them to the right place:
-
-.. code-block:: bash
-
-   ln -s /usr/local/share/certs/ca-root-nss.crt /etc/ssl/cert.pem
-
+   pkg install ca_root_nss
 
 Installing via an Insecure One-Liner
 ------------------------------------
